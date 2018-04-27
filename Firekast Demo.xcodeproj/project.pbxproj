@@ -102,6 +102,7 @@
 				F56122E8208A0DCC001BF7A7 /* Sources */,
 				F56122E9208A0DCC001BF7A7 /* Frameworks */,
 				F56122EA208A0DCC001BF7A7 /* Resources */,
+				3F9B3D4A9BE2D17DB11E34B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,6 +176,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F9B3D4A9BE2D17DB11E34B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-frameworks.sh",
+				"${PODS_ROOT}/Firekast/Firekast.framework",
+				"${BUILT_PRODUCTS_DIR}/UriParser-cpp/UriParser.framework",
+				"${BUILT_PRODUCTS_DIR}/VideoCore/videocore.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Firekast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UriParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/videocore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -332,8 +355,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3V625GQ5E9;
+				DEVELOPMENT_TEAM = AW8HXS3KFS;
 				INFOPLIST_FILE = "Firekast Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.firekast.Firekast-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,8 +372,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3V625GQ5E9;
+				DEVELOPMENT_TEAM = AW8HXS3KFS;
 				INFOPLIST_FILE = "Firekast Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.firekast.Firekast-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
