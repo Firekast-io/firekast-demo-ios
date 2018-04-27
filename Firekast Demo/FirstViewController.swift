@@ -9,6 +9,8 @@
 import UIKit
 import Firekast
 
+var internal_latest_stream: FKStream?
+
 class FirstViewController: UIViewController, FKStreamerDelegate {
     
     @IBOutlet weak var ibCameraPreview: UIView!
@@ -81,6 +83,7 @@ extension FirstViewController {
             return
         }
         self.isStreaming = true
+        internal_latest_stream = stream
         self.stream = stream
     }
     
