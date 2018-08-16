@@ -9,4 +9,7 @@ target 'Firekast Demo' do
   pod 'Firekast', :podspec => 'http://firekast.io/sdk/ios/v1.1.1/Firekast.podspec'
   pod 'VideoCore', :git => 'https://github.com/Firekast-io/VideoCore.git', :tag => 'fk-1.1.1'
 
+  # Youtube
+  pod 'GoogleSignIn', '4.1.2'
+
 end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,6 +23,50 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEY-yq-gyG" userLabel="Social Network">
+                                <rect key="frame" x="8" y="20" width="359" height="48"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRC-jq-aAh" customClass="GIDSignInButton">
+                                        <rect key="frame" x="8" y="8" width="153" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" priority="250" constant="153" id="IHi-7g-zan"/>
+                                            <constraint firstAttribute="height" constant="32" id="JXE-LF-9VM"/>
+                                        </constraints>
+                                    </view>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qrc-5r-862">
+                                        <rect key="frame" x="302" y="8.5" width="51" height="31"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youtube Live" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSX-vG-bWT">
+                                        <rect key="frame" x="215.5" y="16" width="78.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDp-ZS-qjF">
+                                        <rect key="frame" x="8" y="9" width="113" height="30"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Google Sign-out"/>
+                                        <connections>
+                                            <action selector="handleGoogleSignOutClick:" destination="9pv-A4-QxB" eventType="touchUpInside" id="NVr-IH-wr0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.2964094606164383" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pDp-ZS-qjF" firstAttribute="centerY" secondItem="pRC-jq-aAh" secondAttribute="centerY" id="Apt-n5-Fk3"/>
+                                    <constraint firstItem="pRC-jq-aAh" firstAttribute="leading" secondItem="LEY-yq-gyG" secondAttribute="leading" constant="8" id="Clv-nz-PbJ"/>
+                                    <constraint firstItem="zSX-vG-bWT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pRC-jq-aAh" secondAttribute="trailing" constant="8" id="DJE-Qw-EQo"/>
+                                    <constraint firstItem="zSX-vG-bWT" firstAttribute="centerY" secondItem="qrc-5r-862" secondAttribute="centerY" id="Lpp-8k-wYt"/>
+                                    <constraint firstItem="qrc-5r-862" firstAttribute="leading" secondItem="zSX-vG-bWT" secondAttribute="trailing" constant="8" id="XXa-tU-Zw4"/>
+                                    <constraint firstAttribute="bottom" secondItem="pRC-jq-aAh" secondAttribute="bottom" constant="8" id="d75-VN-StO"/>
+                                    <constraint firstItem="qrc-5r-862" firstAttribute="centerY" secondItem="pRC-jq-aAh" secondAttribute="centerY" id="fht-op-ON3"/>
+                                    <constraint firstAttribute="trailing" secondItem="qrc-5r-862" secondAttribute="trailing" constant="8" id="sZV-h6-P7m"/>
+                                    <constraint firstItem="pRC-jq-aAh" firstAttribute="top" secondItem="LEY-yq-gyG" secondAttribute="top" constant="8" id="uyF-jV-35W"/>
+                                    <constraint firstItem="pDp-ZS-qjF" firstAttribute="leading" secondItem="LEY-yq-gyG" secondAttribute="leading" constant="8" id="xh9-h1-jSW"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXx-rZ-sAi">
                                 <rect key="frame" x="117" y="546" width="140" height="54"/>
                                 <color key="backgroundColor" red="1" green="0.72156862749999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -45,11 +89,14 @@
                             <constraint firstItem="enn-Gd-G8Q" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="1dg-iW-Nu3"/>
                             <constraint firstItem="rXx-rZ-sAi" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="6pC-HI-ZAC"/>
                             <constraint firstItem="QvP-c3-yLY" firstAttribute="centerY" secondItem="rXx-rZ-sAi" secondAttribute="centerY" id="7iN-Nb-5RT"/>
+                            <constraint firstItem="LEY-yq-gyG" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="8" id="9zM-ov-cmX"/>
                             <constraint firstItem="enn-Gd-G8Q" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="Eaj-LO-eYg"/>
                             <constraint firstItem="enn-Gd-G8Q" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="L6C-SF-uKW"/>
                             <constraint firstItem="QvP-c3-yLY" firstAttribute="centerX" secondItem="rXx-rZ-sAi" secondAttribute="centerX" id="MDg-gc-Iou"/>
                             <constraint firstItem="enn-Gd-G8Q" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="meb-sl-jUi"/>
+                            <constraint firstItem="LEY-yq-gyG" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="p1V-xj-KYu"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="rXx-rZ-sAi" secondAttribute="bottom" constant="18" id="ruu-9P-7gV"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="LEY-yq-gyG" secondAttribute="trailing" constant="8" id="v70-ui-MVw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -57,7 +104,10 @@
                     <connections>
                         <outlet property="ibButton" destination="rXx-rZ-sAi" id="2c4-tW-O4W"/>
                         <outlet property="ibCameraPreview" destination="enn-Gd-G8Q" id="LaR-lM-aH9"/>
+                        <outlet property="ibGoogleSignInButton" destination="pRC-jq-aAh" id="umn-qE-TMN"/>
+                        <outlet property="ibGoogleSignOutButton" destination="pDp-ZS-qjF" id="dIM-X3-BlN"/>
                         <outlet property="ibLoading" destination="QvP-c3-yLY" id="H7Q-fU-vyC"/>
+                        <outlet property="ibYoutubeSwitch" destination="qrc-5r-862" id="Txr-sg-Nbi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

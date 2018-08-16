@@ -8,6 +8,7 @@
 
 import UIKit
 import Firekast
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,9 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Firekast.initialize(clientKey: "YOUR_CLIENT_KEY_HERE", applicationId: "YOUR_APPLICATION_ID_HERE")
+        initGoogleSignIn()
         return true
     }
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url as URL?,
+                                                 sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
+                                                 annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -44,5 +52,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+// MARK: - Google Sign-in Delegate
+extension AppDelegate {
+    
+    func initGoogleSignIn() {
+        GIDSignIn.sharedInstance().clientID = "YOUR_GOOGLE_CLIENT_ID"
+        var currentScopes = GIDSignIn.sharedInstance().scopes as? [String]
+        currentScopes?.append("https://www.googleapis.com/auth/youtube")
+        currentScopes?.append("https://www.googleapis.com/auth/youtube.force-ssl")
+        // currentScopes?.append("https://www.googleapis.com/auth/youtube.readonly") // <- this scope is needed if you want to access viewers comments in live chat
+        GIDSignIn.sharedInstance().scopes = currentScopes
+    }
+    
 }
 

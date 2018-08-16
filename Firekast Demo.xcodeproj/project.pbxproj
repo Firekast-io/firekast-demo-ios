@@ -20,6 +20,7 @@
 		2FFFFACC744133ED459CC456 /* Pods_Firekast_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firekast_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A9F932A81F3381F3DC4853 /* Pods-Firekast Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firekast Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		B8725E9701E3348C5F26849D /* Pods-Firekast Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firekast Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo.release.xcconfig"; sourceTree = "<group>"; };
+		F54707CC212588850053DE0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F56122EC208A0DCC001BF7A7 /* Firekast Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firekast Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56122EF208A0DCC001BF7A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F56122F1208A0DCC001BF7A7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		F56122E3208A0DCC001BF7A7 = {
 			isa = PBXGroup;
 			children = (
+				F54707CC212588850053DE0F /* README.md */,
 				F56122EE208A0DCC001BF7A7 /* Firekast Demo */,
 				F56122ED208A0DCC001BF7A7 /* Products */,
 				2156242BD63B10A113931224 /* Pods */,
@@ -103,6 +105,7 @@
 				F56122E9208A0DCC001BF7A7 /* Frameworks */,
 				F56122EA208A0DCC001BF7A7 /* Resources */,
 				3F9B3D4A9BE2D17DB11E34B3 /* [CP] Embed Pods Frameworks */,
+				C696FF16EFDD9ADA7B838FB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,18 +189,42 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-frameworks.sh",
 				"${PODS_ROOT}/Firekast/Firekast.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/UriParser-cpp/UriParser.framework",
 				"${BUILT_PRODUCTS_DIR}/VideoCore/videocore.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Firekast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UriParser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/videocore.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C696FF16EFDD9ADA7B838FB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -358,7 +385,10 @@
 				DEVELOPMENT_TEAM = AW8HXS3KFS;
 				INFOPLIST_FILE = "Firekast Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.firekast.Firekast-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -375,7 +405,10 @@
 				DEVELOPMENT_TEAM = AW8HXS3KFS;
 				INFOPLIST_FILE = "Firekast Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.firekast.Firekast-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

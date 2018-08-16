@@ -8,14 +8,18 @@
 
 import UIKit
 import Firekast
+import GoogleSignIn
 
 var internal_latest_stream: FKStream?
 
-class FirstViewController: UIViewController, FKStreamerDelegate {
+class FirstViewController: UIViewController, FKStreamerDelegate, GIDSignInUIDelegate, GIDSignInDelegate {
     
     @IBOutlet weak var ibCameraPreview: UIView!
     @IBOutlet weak var ibButton: UIButton!
     @IBOutlet weak var ibLoading: UIActivityIndicatorView!
+    @IBOutlet weak var ibGoogleSignInButton: GIDSignInButton!
+    @IBOutlet weak var ibGoogleSignOutButton: UIButton!
+    @IBOutlet weak var ibYoutubeSwitch: UISwitch!
     
     var streamer = FKStreamer() // 1. initializes streamer
     var camera: FKCamera!
@@ -39,6 +43,7 @@ class FirstViewController: UIViewController, FKStreamerDelegate {
         super.viewDidLoad()
         template()
         camera = streamer.showCamera(.front, in: ibCameraPreview) // 2. opens camera
+        initGoogleSignIn()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -54,6 +59,24 @@ class FirstViewController: UIViewController, FKStreamerDelegate {
         
         ibButton.setTitle("Start streaming", for: .normal)
         ibLoading.isHidden = true
+        
+        refreshGoogleInterface()
+    }
+    
+    private func refreshGoogleInterface() {
+        let signedIn = GIDSignIn.sharedInstance().currentUser != nil
+        ibGoogleSignInButton.isHidden = signedIn
+        ibYoutubeSwitch.isOn = ibYoutubeSwitch.isOn && signedIn
+        ibYoutubeSwitch.isEnabled = signedIn
+        ibGoogleSignOutButton.isHidden = !signedIn
+    }
+    
+    private func initGoogleSignIn() {
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().uiDelegate = self
+        if GIDSignIn.sharedInstance().currentUser == nil {
+            GIDSignIn.sharedInstance().signInSilently()
+        }
     }
     
     @IBAction func clickStartStop(_ sender: Any) {
@@ -61,7 +84,12 @@ class FirstViewController: UIViewController, FKStreamerDelegate {
             streamer.stopStreaming()
         } else {
             isLoading = true
-            streamer.requestStream { [weak self] (stream, error) in // 3. creates a stream
+            var outputs = [FKOutput]()
+            if ibYoutubeSwitch.isOn, let token = GIDSignIn.sharedInstance().currentUser?.authentication?.accessToken {
+                let youtubeLive = FKOutput.youtube(accessToken: token, title: "Hello world :)")
+                outputs.append(youtubeLive)
+            }
+            streamer.requestStream(outputs: outputs) { [weak self] (stream, error) in // 3. creates a stream
                 guard let this = self else { return }
                 guard let stream = stream else {
                     print("Error: \(String(describing: error))")
@@ -75,11 +103,13 @@ class FirstViewController: UIViewController, FKStreamerDelegate {
     
 }
 
+// MARK: - Firekast Delegate
 extension FirstViewController {
     func streamer(_ streamer: FKStreamer, willStartOn stream: FKStream?, unless error: FKError?) {
         self.isLoading = false
-        guard let stream = stream else {
-            print("Error: \(String(describing: error))")
+        if let error = error {
+            print("Firekast start stream error: \(error)")
+            self.isStreaming = false
             return
         }
         self.isStreaming = true
@@ -94,5 +124,56 @@ extension FirstViewController {
     
     func streamer(_ streamer: FKStreamer, networkQualityDidUpdate rating: Float) {
         
+    }
+}
+
+// MARK: - Google Sign In
+extension FirstViewController {
+    
+    @IBAction func handleGoogleSignOutClick(_ sender: UIButton!) {
+        GIDSignIn.sharedInstance().signOut()
+        refreshGoogleInterface()
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
+              withError error: Error!) {
+        guard let user = user else {
+            print("Google Sign-in failed with error: \(String(describing: error?.localizedDescription))")
+            return
+        }
+        // Perform any operations on signed in user here.
+        let _ = user.authentication.idToken // Safe to send to the server
+        let userId = user.userID ?? "unknown"             // For client-side use only!
+        let fullName = user.profile.name ?? "unknown"
+        let email = user.profile.email ?? "unknown"
+        print("Google User ID: \(userId), name: \(fullName), email: \(email)")
+        
+        guard let authentication = user.authentication else {
+            GIDSignIn.sharedInstance().signOut()
+            refreshGoogleInterface()
+            return
+        }
+        
+        guard let expirationDate = authentication.accessTokenExpirationDate, Date() < expirationDate else {
+            // At the time of writing, tokens expires after 3600 sec. It is set like that by Google (not editable).
+            // Note: signInSilently does not refresh tokens automatically.
+            print("User is sign-in to Google but access token has expirated")
+            authentication.refreshTokens(handler: { (authentication, error) in
+                guard error == nil else {
+                    GIDSignIn.sharedInstance().signOut()
+                    self.refreshGoogleInterface()
+                    return
+                }
+                self.refreshGoogleInterface()
+            })
+            return
+        }
+        refreshGoogleInterface()
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
+              withError error: Error!) {
+        // Perform any operations when the user disconnects from app here.
+        refreshGoogleInterface()
     }
 }
