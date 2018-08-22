@@ -105,7 +105,7 @@ class FirstViewController: UIViewController, FKStreamerDelegate, GIDSignInUIDele
 
 // MARK: - Firekast Delegate
 extension FirstViewController {
-    func streamer(_ streamer: FKStreamer, willStartOn stream: FKStream?, unless error: FKError?) {
+    func streamer(_ streamer: FKStreamer, willStartOn stream: FKStream?, unless error: NSError?) {
         self.isLoading = false
         if let error = error {
             print("Firekast start stream error: \(error)")
@@ -117,7 +117,7 @@ extension FirstViewController {
         self.stream = stream
     }
     
-    func streamer(_ streamer: FKStreamer, didStopOn stream: FKStream?, error: FKError?) {
+    func streamer(_ streamer: FKStreamer, didStopOn stream: FKStream?, error: NSError?) {
         self.isStreaming = false
         self.stream = nil
     }

@@ -63,11 +63,15 @@ class SecondViewController: UIViewController, FKPlayerDelegate {
 }
 
 extension SecondViewController {
-    func player(_ player: FKPlayer, willPlay stream: FKStream?, unless error: FKError?) {
+    func player(_ player: FKPlayer, willPlay stream: FKStream?, unless error: NSError?) {
         isLoading = false
         if let error = error {
             print("Player error: \(error)")
         }
+    }
+    
+    func player(_ player: FKPlayer, videoDurationIsAvailable duration: TimeInterval) {
+    
     }
     
     func player(_ player: FKPlayer, stateDidChanged state: FKPlayer.State) {
