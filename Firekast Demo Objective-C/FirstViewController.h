@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Firekast/Firekast-Swift.h"
 
-@interface FirstViewController : UIViewController
-
-
+@interface FirstViewController : UIViewController<FKStreamerDelegate>
+    
+    @property (weak, nonatomic) IBOutlet UIView *ibCameraPreview;
+    @property (weak, nonatomic) IBOutlet UIView *ibSocialViews;
+    @property (weak, nonatomic) IBOutlet UIButton *ibStartStopButton;
+    @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *ibLoading;
+    
+    @property FKStreamer *streamer;
+    @property FKCamera *camera;
+    @property FKStream *stream;
 @end
 

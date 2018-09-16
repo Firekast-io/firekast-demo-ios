@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Firekast/Firekast-Swift.h"
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController<FKPlayerDelegate>
 
+    @property (weak, nonatomic) IBOutlet UIView *ibPlayerView;
+    @property (weak, nonatomic) IBOutlet UIButton *ibStartStopButton;
+    @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *ibLoading;
 
 @end
 

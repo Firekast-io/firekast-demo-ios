@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString *IDStreamToPlay;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
 
 @end
 

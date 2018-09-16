@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "Firekast/Firekast-Swift.h"
 
+NSString *IDStreamToPlay = nil;
+
 @interface AppDelegate ()
 
 @end
@@ -18,21 +20,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [Firekast initializeWithClientKey:@"FIREKAST_CLIENT_KEY" applicationId:@"FIREKAST_APPLICATION_ID"];
-
-    // STATES
-    //  Live = 0,
-    //  VOD = 1,
-    //  Waiting = 2,
-    //  Timeout = 3,
-    //  Unknown = 4,
-    
-    FKStream* stream = [[FKStream alloc] initWithWithoutDataExceptStreamId: @"u40fks05cqbc18sq4"];
-    NSLog(@"Stream {id: %@, state: %ld}", [stream streamId], (long)[stream state]);
-    
-    [stream fetchInBackground_objc:^(NSError * error) {
-        NSLog(@"Stream fetched {id: %@, state: %ld, error: %@}", [stream streamId], (long)[stream state], error);
-    }];
-    
     return YES;
 }
 
