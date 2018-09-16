@@ -157,7 +157,7 @@ extension FirstViewController {
         guard let expirationDate = authentication.accessTokenExpirationDate, Date() < expirationDate else {
             // At the time of writing, tokens expires after 3600 sec. It is set like that by Google (not editable).
             // Note: signInSilently does not refresh tokens automatically.
-            print("User is sign-in to Google but access token has expirated")
+            print("User is signed in to Google but access token has expired")
             authentication.refreshTokens(handler: { (authentication, error) in
                 guard error == nil else {
                     GIDSignIn.sharedInstance().signOut()

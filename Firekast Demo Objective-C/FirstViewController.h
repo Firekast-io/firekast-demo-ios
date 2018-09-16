@@ -8,13 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "Firekast/Firekast-Swift.h"
+#import <GoogleSignIn/GoogleSignIn.h>
 
-@interface FirstViewController : UIViewController<FKStreamerDelegate>
+@interface FirstViewController : UIViewController<FKStreamerDelegate, GIDSignInUIDelegate, GIDSignInDelegate>
     
     @property (weak, nonatomic) IBOutlet UIView *ibCameraPreview;
     @property (weak, nonatomic) IBOutlet UIView *ibSocialViews;
     @property (weak, nonatomic) IBOutlet UIButton *ibStartStopButton;
     @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *ibLoading;
+    
+    @property (weak, nonatomic) IBOutlet GIDSignInButton *ibGoogleSignInButton;
+    @property (weak, nonatomic) IBOutlet UISwitch *ibYoutubeSwitch;
+    @property (weak, nonatomic) IBOutlet UIButton *ibGoogleSignOutButton;
     
     @property FKStreamer *streamer;
     @property FKCamera *camera;

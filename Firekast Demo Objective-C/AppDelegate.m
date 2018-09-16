@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Firekast/Firekast-Swift.h"
+@import GoogleSignIn;
 
 NSString *IDStreamToPlay = nil;
 
@@ -20,9 +21,22 @@ NSString *IDStreamToPlay = nil;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [Firekast initializeWithClientKey:@"FIREKAST_CLIENT_KEY" applicationId:@"FIREKAST_APPLICATION_ID"];
+    // Init Google SignIn
+    [GIDSignIn sharedInstance].clientID = @"YOUR_GOOGLE_CLIENT_ID";
+    NSMutableArray *currentScopes = [[[GIDSignIn sharedInstance] scopes] mutableCopy];
+    [currentScopes addObject: @"https://www.googleapis.com/auth/youtube"];
+    [currentScopes addObject:@"https://www.googleapis.com/auth/youtube.force-ssl"];
+    [[GIDSignIn sharedInstance] setScopes:currentScopes];
     return YES;
 }
 
+- (BOOL)application:(UIApplication *)app
+            openURL:(NSURL *)url
+            options:(NSDictionary<NSString *, id> *)options {
+    return [[GIDSignIn sharedInstance] handleURL:url
+                               sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+                                      annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
