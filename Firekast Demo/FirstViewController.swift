@@ -20,6 +20,7 @@ class FirstViewController: UIViewController, FKStreamerDelegate, GIDSignInUIDele
     @IBOutlet weak var ibGoogleSignInButton: GIDSignInButton!
     @IBOutlet weak var ibGoogleSignOutButton: UIButton!
     @IBOutlet weak var ibYoutubeSwitch: UISwitch!
+    @IBOutlet weak var ibCameraCapture: UIImageView!
     
     var streamer = FKStreamer() // 1. initializes streamer
     var camera: FKCamera!
@@ -99,6 +100,11 @@ class FirstViewController: UIViewController, FKStreamerDelegate, GIDSignInUIDele
                 this.streamer.startStreaming(on: stream, delegate: this) // 4. starts streaming firekast
             }
         }
+    }
+    
+    @IBAction func clickCapture(_ sender: Any) {
+        guard let capture = camera?.capture() else { return }
+        ibCameraCapture.image = capture
     }
     
 }

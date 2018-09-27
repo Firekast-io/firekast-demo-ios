@@ -20,7 +20,9 @@
     @property (weak, nonatomic) IBOutlet GIDSignInButton *ibGoogleSignInButton;
     @property (weak, nonatomic) IBOutlet UISwitch *ibYoutubeSwitch;
     @property (weak, nonatomic) IBOutlet UIButton *ibGoogleSignOutButton;
-    
+
+    @property (weak, nonatomic) IBOutlet UIImageView *ibCameraCapture;
+
     @property FKStreamer *streamer;
     @property FKCamera *camera;
     @property FKStream *stream;

@@ -17,7 +17,7 @@
     
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _streamer = [[FKStreamer alloc] initWithUseInterfaceOrientation:TRUE];
+    _streamer = [[FKStreamer alloc] initWithUsecase:Portrait];
     _camera = [_streamer showCamera:Front in:_ibCameraPreview];
     // init UI
     [self showLoading:FALSE];
@@ -61,7 +61,12 @@
         }];
     }
 }
-    
+
+- (IBAction)clickCapture:(id)sender {
+    UIImage *capture = [_camera capture];
+    [[self ibCameraCapture] setImage:capture];
+}
+
 - (IBAction)clickGoogleSignOut:(id)sender {
     [[GIDSignIn sharedInstance] signOut];
     [self refreshGoogleInterface];

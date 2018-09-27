@@ -6,8 +6,8 @@ target 'Firekast Demo' do
   use_frameworks!
 
   # Pods for Firekast Demo
-  pod 'Firekast', :podspec => 'http://firekast.io/sdk/ios/v1.2.1/Firekast.podspec'
-  pod 'VideoCore', :git => 'https://github.com/Firekast-io/VideoCore.git', :tag => 'fk-1.2.1'
+  pod 'Firekast', :podspec => 'http://firekast.io/sdk/ios/v1.2.2/Firekast.podspec'
+  pod 'VideoCore', :git => 'https://github.com/Firekast-io/VideoCore.git', :tag => 'fk-1.2.2'
 
   # Youtube
   pod 'GoogleSignIn', '4.1.2'
@@ -18,8 +18,8 @@ target 'Firekast Demo Objective-C' do
   use_frameworks!
   
   # Pods for Firekast Demo
-  pod 'Firekast', :podspec => 'http://firekast.io/sdk/ios/v1.2.1/Firekast.podspec'
-  pod 'VideoCore', :git => 'https://github.com/Firekast-io/VideoCore.git', :tag => 'fk-1.2.1'
+  pod 'Firekast', :podspec => 'http://firekast.io/sdk/ios/v1.2.2/Firekast.podspec'
+  pod 'VideoCore', :git => 'https://github.com/Firekast-io/VideoCore.git', :tag => 'fk-1.2.2'
   
   # Youtube
   pod 'GoogleSignIn', '4.1.2'
