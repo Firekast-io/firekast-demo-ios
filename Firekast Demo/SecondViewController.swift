@@ -35,6 +35,8 @@ class SecondViewController: UIViewController, FKPlayerDelegate {
         super.viewDidLoad()
         template()
         player.show(in: ibPlayer) // 2. displays player
+        player.scalingMode = .aspectFit
+        player.controlStyle = .fullscreen
     }
     
     private func template() {

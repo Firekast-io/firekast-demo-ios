@@ -20,6 +20,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.player = [[FKPlayer alloc] init];
     [self.player showIn:_ibPlayerView];
+    [self.player setScalingMode:AspectFit];
+    [self.player setControlStyle:Fullscreen];
     // Init UI
     [self.ibLoading setHidden:TRUE];
     [self.ibStartStopButton setTitle:[self buttonTitle] forState:UIControlStateNormal];

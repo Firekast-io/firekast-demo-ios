@@ -7,142 +7,140 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		452E60ACD27E48E20DEB5F85 /* Pods_Firekast_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFFFACC744133ED459CC456 /* Pods_Firekast_Demo.framework */; };
-		A637741FCF9008A1F2D9D3E0 /* Pods_Firekast_Demo_Objective_C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF6F5CE05BFD042453AE4B3 /* Pods_Firekast_Demo_Objective_C.framework */; };
-		F56122F0208A0DCC001BF7A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56122EF208A0DCC001BF7A7 /* AppDelegate.swift */; };
-		F56122F2208A0DCC001BF7A7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56122F1208A0DCC001BF7A7 /* FirstViewController.swift */; };
-		F56122F4208A0DCC001BF7A7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56122F3208A0DCC001BF7A7 /* SecondViewController.swift */; };
-		F56122F7208A0DCC001BF7A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56122F5208A0DCC001BF7A7 /* Main.storyboard */; };
-		F56122F9208A0DCD001BF7A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56122F8208A0DCD001BF7A7 /* Assets.xcassets */; };
-		F56122FC208A0DCD001BF7A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56122FA208A0DCD001BF7A7 /* LaunchScreen.storyboard */; };
-		F56F4058212D90A600627BD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F56F4057212D90A600627BD0 /* AppDelegate.m */; };
-		F56F405B212D90A600627BD0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F56F405A212D90A600627BD0 /* FirstViewController.m */; };
-		F56F405E212D90A600627BD0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F56F405D212D90A600627BD0 /* SecondViewController.m */; };
-		F56F4061212D90A600627BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56F405F212D90A600627BD0 /* Main.storyboard */; };
-		F56F4063212D90A800627BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56F4062212D90A800627BD0 /* Assets.xcassets */; };
-		F56F4066212D90A800627BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56F4064212D90A800627BD0 /* LaunchScreen.storyboard */; };
-		F56F4069212D90A800627BD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F56F4068212D90A800627BD0 /* main.m */; };
+		B6C495D2502054925B07FBAA /* Pods_Firekast_Demo_Objective_C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7356596A2061CB5404C9D4B9 /* Pods_Firekast_Demo_Objective_C.framework */; };
+		E66BC05DFC431D92403AFC2B /* Pods_Firekast_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE64D5B89F34E8680A29A4 /* Pods_Firekast_Demo.framework */; };
+		F544C5FB216E59A1007426D4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F544C5F9216E59A1007426D4 /* FirstViewController.swift */; };
+		F544C5FC216E59A1007426D4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F544C5FA216E59A1007426D4 /* SecondViewController.swift */; };
+		F5880BC6216E4EA3005A4CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5880BC5216E4EA3005A4CAB /* AppDelegate.swift */; };
+		F5880BCB216E4EA3005A4CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5880BC9216E4EA3005A4CAB /* Main.storyboard */; };
+		F5880BCD216E4EA4005A4CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5880BCC216E4EA4005A4CAB /* Assets.xcassets */; };
+		F5880BD0216E4EA4005A4CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5880BCE216E4EA4005A4CAB /* LaunchScreen.storyboard */; };
+		F5880BDF216E5942005A4CAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880BDE216E5942005A4CAB /* AppDelegate.m */; };
+		F5880BE2216E5942005A4CAB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880BE1216E5942005A4CAB /* FirstViewController.m */; };
+		F5880BE5216E5942005A4CAB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880BE4216E5942005A4CAB /* SecondViewController.m */; };
+		F5880BE8216E5942005A4CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5880BE6216E5942005A4CAB /* Main.storyboard */; };
+		F5880BEA216E5943005A4CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5880BE9216E5943005A4CAB /* Assets.xcassets */; };
+		F5880BED216E5943005A4CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5880BEB216E5943005A4CAB /* LaunchScreen.storyboard */; };
+		F5880BF0216E5943005A4CAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880BEF216E5943005A4CAB /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		185D9E00499151ABFBDD61EA /* Pods-Firekast Demo Objective-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firekast Demo Objective-C.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C.debug.xcconfig"; sourceTree = "<group>"; };
-		2DF6F5CE05BFD042453AE4B3 /* Pods_Firekast_Demo_Objective_C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firekast_Demo_Objective_C.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FFFFACC744133ED459CC456 /* Pods_Firekast_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firekast_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		94A9F932A81F3381F3DC4853 /* Pods-Firekast Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firekast Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		A48AC26BD2B7430C3011EF2D /* Pods-Firekast Demo Objective-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firekast Demo Objective-C.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C.release.xcconfig"; sourceTree = "<group>"; };
-		B8725E9701E3348C5F26849D /* Pods-Firekast Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firekast Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo.release.xcconfig"; sourceTree = "<group>"; };
-		F54707CC212588850053DE0F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		F56122EC208A0DCC001BF7A7 /* Firekast Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firekast Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F56122EF208A0DCC001BF7A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F56122F1208A0DCC001BF7A7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		F56122F3208A0DCC001BF7A7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		F56122F6208A0DCC001BF7A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F56122F8208A0DCD001BF7A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F56122FB208A0DCD001BF7A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F56122FD208A0DCD001BF7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F56F4054212D90A600627BD0 /* Firekast Demo Objective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firekast Demo Objective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F56F4056212D90A600627BD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F56F4057212D90A600627BD0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F56F4059212D90A600627BD0 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		F56F405A212D90A600627BD0 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		F56F405C212D90A600627BD0 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		F56F405D212D90A600627BD0 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		F56F4060212D90A600627BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F56F4062212D90A800627BD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F56F4065212D90A800627BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F56F4067212D90A800627BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F56F4068212D90A800627BD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2AE2A6A9B325641AE5F73F1D /* Pods-Firekast Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firekast Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo.release.xcconfig"; sourceTree = "<group>"; };
+		4096577500B2FE21D82AC8CD /* Pods-Firekast Demo Objective-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firekast Demo Objective-C.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C.release.xcconfig"; sourceTree = "<group>"; };
+		684BC1E008D485C70D9FD620 /* Pods-Firekast Demo Objective-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firekast Demo Objective-C.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C.debug.xcconfig"; sourceTree = "<group>"; };
+		7356596A2061CB5404C9D4B9 /* Pods_Firekast_Demo_Objective_C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firekast_Demo_Objective_C.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DE64D5B89F34E8680A29A4 /* Pods_Firekast_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firekast_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB713AE13F381D2C0A98D8C5 /* Pods-Firekast Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firekast Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		F544C5F9216E59A1007426D4 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F544C5FA216E59A1007426D4 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F5880BC2216E4EA3005A4CAB /* Firekast Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firekast Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5880BC5216E4EA3005A4CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5880BCA216E4EA3005A4CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5880BCC216E4EA4005A4CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5880BCF216E4EA4005A4CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5880BD1216E4EA4005A4CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5880BDB216E5942005A4CAB /* Firekast Demo Objective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firekast Demo Objective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5880BDD216E5942005A4CAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5880BDE216E5942005A4CAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5880BE0216E5942005A4CAB /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		F5880BE1216E5942005A4CAB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F5880BE3216E5942005A4CAB /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		F5880BE4216E5942005A4CAB /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F5880BE7216E5942005A4CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5880BE9216E5943005A4CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5880BEC216E5943005A4CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5880BEE216E5943005A4CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5880BEF216E5943005A4CAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F56122E9208A0DCC001BF7A7 /* Frameworks */ = {
+		F5880BBF216E4EA3005A4CAB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				452E60ACD27E48E20DEB5F85 /* Pods_Firekast_Demo.framework in Frameworks */,
+				E66BC05DFC431D92403AFC2B /* Pods_Firekast_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F56F4051212D90A600627BD0 /* Frameworks */ = {
+		F5880BD8216E5942005A4CAB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A637741FCF9008A1F2D9D3E0 /* Pods_Firekast_Demo_Objective_C.framework in Frameworks */,
+				B6C495D2502054925B07FBAA /* Pods_Firekast_Demo_Objective_C.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2156242BD63B10A113931224 /* Pods */ = {
+		0ACDBA2DB86BB0F84458C48D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				94A9F932A81F3381F3DC4853 /* Pods-Firekast Demo.debug.xcconfig */,
-				B8725E9701E3348C5F26849D /* Pods-Firekast Demo.release.xcconfig */,
-				185D9E00499151ABFBDD61EA /* Pods-Firekast Demo Objective-C.debug.xcconfig */,
-				A48AC26BD2B7430C3011EF2D /* Pods-Firekast Demo Objective-C.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		8C3357235BA4631F00BE2CCD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2FFFFACC744133ED459CC456 /* Pods_Firekast_Demo.framework */,
-				2DF6F5CE05BFD042453AE4B3 /* Pods_Firekast_Demo_Objective_C.framework */,
+				A5DE64D5B89F34E8680A29A4 /* Pods_Firekast_Demo.framework */,
+				7356596A2061CB5404C9D4B9 /* Pods_Firekast_Demo_Objective_C.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F56122E3208A0DCC001BF7A7 = {
+		411AA9B524400BC4390B872D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F54707CC212588850053DE0F /* README.md */,
-				F56122EE208A0DCC001BF7A7 /* Firekast Demo */,
-				F56F4055212D90A600627BD0 /* Firekast Demo Objective-C */,
-				F56122ED208A0DCC001BF7A7 /* Products */,
-				2156242BD63B10A113931224 /* Pods */,
-				8C3357235BA4631F00BE2CCD /* Frameworks */,
+				EB713AE13F381D2C0A98D8C5 /* Pods-Firekast Demo.debug.xcconfig */,
+				2AE2A6A9B325641AE5F73F1D /* Pods-Firekast Demo.release.xcconfig */,
+				684BC1E008D485C70D9FD620 /* Pods-Firekast Demo Objective-C.debug.xcconfig */,
+				4096577500B2FE21D82AC8CD /* Pods-Firekast Demo Objective-C.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5880BB9216E4EA3005A4CAB = {
+			isa = PBXGroup;
+			children = (
+				F5880BC4216E4EA3005A4CAB /* Firekast Demo */,
+				F5880BDC216E5942005A4CAB /* Firekast Demo Objective-C */,
+				F5880BC3216E4EA3005A4CAB /* Products */,
+				411AA9B524400BC4390B872D /* Pods */,
+				0ACDBA2DB86BB0F84458C48D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		F56122ED208A0DCC001BF7A7 /* Products */ = {
+		F5880BC3216E4EA3005A4CAB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F56122EC208A0DCC001BF7A7 /* Firekast Demo.app */,
-				F56F4054212D90A600627BD0 /* Firekast Demo Objective-C.app */,
+				F5880BC2216E4EA3005A4CAB /* Firekast Demo.app */,
+				F5880BDB216E5942005A4CAB /* Firekast Demo Objective-C.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F56122EE208A0DCC001BF7A7 /* Firekast Demo */ = {
+		F5880BC4216E4EA3005A4CAB /* Firekast Demo */ = {
 			isa = PBXGroup;
 			children = (
-				F56122EF208A0DCC001BF7A7 /* AppDelegate.swift */,
-				F56122F1208A0DCC001BF7A7 /* FirstViewController.swift */,
-				F56122F3208A0DCC001BF7A7 /* SecondViewController.swift */,
-				F56122F5208A0DCC001BF7A7 /* Main.storyboard */,
-				F56122F8208A0DCD001BF7A7 /* Assets.xcassets */,
-				F56122FA208A0DCD001BF7A7 /* LaunchScreen.storyboard */,
-				F56122FD208A0DCD001BF7A7 /* Info.plist */,
+				F544C5F9216E59A1007426D4 /* FirstViewController.swift */,
+				F544C5FA216E59A1007426D4 /* SecondViewController.swift */,
+				F5880BC5216E4EA3005A4CAB /* AppDelegate.swift */,
+				F5880BC9216E4EA3005A4CAB /* Main.storyboard */,
+				F5880BCC216E4EA4005A4CAB /* Assets.xcassets */,
+				F5880BCE216E4EA4005A4CAB /* LaunchScreen.storyboard */,
+				F5880BD1216E4EA4005A4CAB /* Info.plist */,
 			);
 			path = "Firekast Demo";
 			sourceTree = "<group>";
 		};
-		F56F4055212D90A600627BD0 /* Firekast Demo Objective-C */ = {
+		F5880BDC216E5942005A4CAB /* Firekast Demo Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				F56F4056212D90A600627BD0 /* AppDelegate.h */,
-				F56F4057212D90A600627BD0 /* AppDelegate.m */,
-				F56F4059212D90A600627BD0 /* FirstViewController.h */,
-				F56F405A212D90A600627BD0 /* FirstViewController.m */,
-				F56F405C212D90A600627BD0 /* SecondViewController.h */,
-				F56F405D212D90A600627BD0 /* SecondViewController.m */,
-				F56F405F212D90A600627BD0 /* Main.storyboard */,
-				F56F4062212D90A800627BD0 /* Assets.xcassets */,
-				F56F4064212D90A800627BD0 /* LaunchScreen.storyboard */,
-				F56F4067212D90A800627BD0 /* Info.plist */,
-				F56F4068212D90A800627BD0 /* main.m */,
+				F5880BDD216E5942005A4CAB /* AppDelegate.h */,
+				F5880BDE216E5942005A4CAB /* AppDelegate.m */,
+				F5880BE0216E5942005A4CAB /* FirstViewController.h */,
+				F5880BE1216E5942005A4CAB /* FirstViewController.m */,
+				F5880BE3216E5942005A4CAB /* SecondViewController.h */,
+				F5880BE4216E5942005A4CAB /* SecondViewController.m */,
+				F5880BE6216E5942005A4CAB /* Main.storyboard */,
+				F5880BE9216E5943005A4CAB /* Assets.xcassets */,
+				F5880BEB216E5943005A4CAB /* LaunchScreen.storyboard */,
+				F5880BEE216E5943005A4CAB /* Info.plist */,
+				F5880BEF216E5943005A4CAB /* main.m */,
 			);
 			path = "Firekast Demo Objective-C";
 			sourceTree = "<group>";
@@ -150,16 +148,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F56122EB208A0DCC001BF7A7 /* Firekast Demo */ = {
+		F5880BC1216E4EA3005A4CAB /* Firekast Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F5612300208A0DCD001BF7A7 /* Build configuration list for PBXNativeTarget "Firekast Demo" */;
+			buildConfigurationList = F5880BD4216E4EA4005A4CAB /* Build configuration list for PBXNativeTarget "Firekast Demo" */;
 			buildPhases = (
-				290AC5833485DF67A9588BCD /* [CP] Check Pods Manifest.lock */,
-				F56122E8208A0DCC001BF7A7 /* Sources */,
-				F56122E9208A0DCC001BF7A7 /* Frameworks */,
-				F56122EA208A0DCC001BF7A7 /* Resources */,
-				3F9B3D4A9BE2D17DB11E34B3 /* [CP] Embed Pods Frameworks */,
-				C696FF16EFDD9ADA7B838FB1 /* [CP] Copy Pods Resources */,
+				D0A702B223D929AFE2F3E253 /* [CP] Check Pods Manifest.lock */,
+				F5880BBE216E4EA3005A4CAB /* Sources */,
+				F5880BBF216E4EA3005A4CAB /* Frameworks */,
+				F5880BC0216E4EA3005A4CAB /* Resources */,
+				3C50C7F6AEFBC2131D30362C /* [CP] Embed Pods Frameworks */,
+				860F74F5408D97EFB0458A69 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,19 +165,19 @@
 			);
 			name = "Firekast Demo";
 			productName = "Firekast Demo";
-			productReference = F56122EC208A0DCC001BF7A7 /* Firekast Demo.app */;
+			productReference = F5880BC2216E4EA3005A4CAB /* Firekast Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F56F4053212D90A600627BD0 /* Firekast Demo Objective-C */ = {
+		F5880BDA216E5942005A4CAB /* Firekast Demo Objective-C */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F56F406C212D90A800627BD0 /* Build configuration list for PBXNativeTarget "Firekast Demo Objective-C" */;
+			buildConfigurationList = F5880BF1216E5943005A4CAB /* Build configuration list for PBXNativeTarget "Firekast Demo Objective-C" */;
 			buildPhases = (
-				7D9A528EA670426F9A593A44 /* [CP] Check Pods Manifest.lock */,
-				F56F4050212D90A600627BD0 /* Sources */,
-				F56F4051212D90A600627BD0 /* Frameworks */,
-				F56F4052212D90A600627BD0 /* Resources */,
-				88862E6A6D53FF125A90956F /* [CP] Embed Pods Frameworks */,
-				259B9519542325E7A9AF3EB6 /* [CP] Copy Pods Resources */,
+				3E7BF9A5D37ACE6BD0C817BD /* [CP] Check Pods Manifest.lock */,
+				F5880BD7216E5942005A4CAB /* Sources */,
+				F5880BD8216E5942005A4CAB /* Frameworks */,
+				F5880BD9216E5942005A4CAB /* Resources */,
+				CF891E9D1943CBC0CF4658C5 /* [CP] Embed Pods Frameworks */,
+				0DC896E8CD456B5C5BCDA95E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,28 +185,28 @@
 			);
 			name = "Firekast Demo Objective-C";
 			productName = "Firekast Demo Objective-C";
-			productReference = F56F4054212D90A600627BD0 /* Firekast Demo Objective-C.app */;
+			productReference = F5880BDB216E5942005A4CAB /* Firekast Demo Objective-C.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F56122E4208A0DCC001BF7A7 /* Project object */ = {
+		F5880BBA216E4EA3005A4CAB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = Firekast;
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Firekast Corp.";
 				TargetAttributes = {
-					F56122EB208A0DCC001BF7A7 = {
-						CreatedOnToolsVersion = 9.3;
+					F5880BC1216E4EA3005A4CAB = {
+						CreatedOnToolsVersion = 10.0;
 					};
-					F56F4053212D90A600627BD0 = {
-						CreatedOnToolsVersion = 9.4.1;
+					F5880BDA216E5942005A4CAB = {
+						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
-			buildConfigurationList = F56122E7208A0DCC001BF7A7 /* Build configuration list for PBXProject "Firekast Demo" */;
+			buildConfigurationList = F5880BBD216E4EA3005A4CAB /* Build configuration list for PBXProject "Firekast Demo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,51 +214,55 @@
 				en,
 				Base,
 			);
-			mainGroup = F56122E3208A0DCC001BF7A7;
-			productRefGroup = F56122ED208A0DCC001BF7A7 /* Products */;
+			mainGroup = F5880BB9216E4EA3005A4CAB;
+			productRefGroup = F5880BC3216E4EA3005A4CAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F56122EB208A0DCC001BF7A7 /* Firekast Demo */,
-				F56F4053212D90A600627BD0 /* Firekast Demo Objective-C */,
+				F5880BC1216E4EA3005A4CAB /* Firekast Demo */,
+				F5880BDA216E5942005A4CAB /* Firekast Demo Objective-C */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F56122EA208A0DCC001BF7A7 /* Resources */ = {
+		F5880BC0216E4EA3005A4CAB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F56122FC208A0DCD001BF7A7 /* LaunchScreen.storyboard in Resources */,
-				F56122F9208A0DCD001BF7A7 /* Assets.xcassets in Resources */,
-				F56122F7208A0DCC001BF7A7 /* Main.storyboard in Resources */,
+				F5880BD0216E4EA4005A4CAB /* LaunchScreen.storyboard in Resources */,
+				F5880BCD216E4EA4005A4CAB /* Assets.xcassets in Resources */,
+				F5880BCB216E4EA3005A4CAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F56F4052212D90A600627BD0 /* Resources */ = {
+		F5880BD9216E5942005A4CAB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F56F4066212D90A800627BD0 /* LaunchScreen.storyboard in Resources */,
-				F56F4063212D90A800627BD0 /* Assets.xcassets in Resources */,
-				F56F4061212D90A600627BD0 /* Main.storyboard in Resources */,
+				F5880BED216E5943005A4CAB /* LaunchScreen.storyboard in Resources */,
+				F5880BEA216E5943005A4CAB /* Assets.xcassets in Resources */,
+				F5880BE8216E5942005A4CAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		259B9519542325E7A9AF3EB6 /* [CP] Copy Pods Resources */ = {
+		0DC896E8CD456B5C5BCDA95E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C-resources.sh",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
@@ -269,28 +271,12 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		290AC5833485DF67A9588BCD /* [CP] Check Pods Manifest.lock */ = {
+		3C50C7F6AEFBC2131D30362C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Firekast Demo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3F9B3D4A9BE2D17DB11E34B3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-frameworks.sh",
@@ -302,6 +288,8 @@
 				"${BUILT_PRODUCTS_DIR}/VideoCore/videocore.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Firekast.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
@@ -315,16 +303,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7D9A528EA670426F9A593A44 /* [CP] Check Pods Manifest.lock */ = {
+		3E7BF9A5D37ACE6BD0C817BD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Firekast Demo Objective-C-checkManifestLockResult.txt",
 			);
@@ -333,10 +325,34 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		88862E6A6D53FF125A90956F /* [CP] Embed Pods Frameworks */ = {
+		860F74F5408D97EFB0458A69 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF891E9D1943CBC0CF4658C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C-frameworks.sh",
@@ -348,6 +364,8 @@
 				"${BUILT_PRODUCTS_DIR}/VideoCore/videocore.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Firekast.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
@@ -361,79 +379,83 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C696FF16EFDD9ADA7B838FB1 /* [CP] Copy Pods Resources */ = {
+		D0A702B223D929AFE2F3E253 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			inputFileListPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"$(DERIVED_FILE_DIR)/Pods-Firekast Demo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F56122E8208A0DCC001BF7A7 /* Sources */ = {
+		F5880BBE216E4EA3005A4CAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F56122F4208A0DCC001BF7A7 /* SecondViewController.swift in Sources */,
-				F56122F0208A0DCC001BF7A7 /* AppDelegate.swift in Sources */,
-				F56122F2208A0DCC001BF7A7 /* FirstViewController.swift in Sources */,
+				F544C5FC216E59A1007426D4 /* SecondViewController.swift in Sources */,
+				F5880BC6216E4EA3005A4CAB /* AppDelegate.swift in Sources */,
+				F544C5FB216E59A1007426D4 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F56F4050212D90A600627BD0 /* Sources */ = {
+		F5880BD7216E5942005A4CAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F56F405E212D90A600627BD0 /* SecondViewController.m in Sources */,
-				F56F4058212D90A600627BD0 /* AppDelegate.m in Sources */,
-				F56F4069212D90A800627BD0 /* main.m in Sources */,
-				F56F405B212D90A600627BD0 /* FirstViewController.m in Sources */,
+				F5880BE5216E5942005A4CAB /* SecondViewController.m in Sources */,
+				F5880BDF216E5942005A4CAB /* AppDelegate.m in Sources */,
+				F5880BF0216E5943005A4CAB /* main.m in Sources */,
+				F5880BE2216E5942005A4CAB /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F56122F5208A0DCC001BF7A7 /* Main.storyboard */ = {
+		F5880BC9216E4EA3005A4CAB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F56122F6208A0DCC001BF7A7 /* Base */,
+				F5880BCA216E4EA3005A4CAB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F56122FA208A0DCD001BF7A7 /* LaunchScreen.storyboard */ = {
+		F5880BCE216E4EA4005A4CAB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F56122FB208A0DCD001BF7A7 /* Base */,
+				F5880BCF216E4EA4005A4CAB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		F56F405F212D90A600627BD0 /* Main.storyboard */ = {
+		F5880BE6216E5942005A4CAB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F56F4060212D90A600627BD0 /* Base */,
+				F5880BE7216E5942005A4CAB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F56F4064212D90A800627BD0 /* LaunchScreen.storyboard */ = {
+		F5880BEB216E5943005A4CAB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F56F4065212D90A800627BD0 /* Base */,
+				F5880BEC216E5943005A4CAB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -441,7 +463,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F56122FE208A0DCD001BF7A7 /* Debug */ = {
+		F5880BD2216E4EA4005A4CAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -492,8 +514,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -501,7 +524,7 @@
 			};
 			name = Debug;
 		};
-		F56122FF208A0DCD001BF7A7 /* Release */ = {
+		F5880BD3216E4EA4005A4CAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -546,8 +569,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -555,56 +579,53 @@
 			};
 			name = Release;
 		};
-		F5612301208A0DCD001BF7A7 /* Debug */ = {
+		F5880BD5216E4EA4005A4CAB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94A9F932A81F3381F3DC4853 /* Pods-Firekast Demo.debug.xcconfig */;
+			baseConfigurationReference = EB713AE13F381D2C0A98D8C5 /* Pods-Firekast Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AW8HXS3KFS;
 				INFOPLIST_FILE = "Firekast Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.firekast.Firekast-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		F5612302208A0DCD001BF7A7 /* Release */ = {
+		F5880BD6216E4EA4005A4CAB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8725E9701E3348C5F26849D /* Pods-Firekast Demo.release.xcconfig */;
+			baseConfigurationReference = 2AE2A6A9B325641AE5F73F1D /* Pods-Firekast Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AW8HXS3KFS;
 				INFOPLIST_FILE = "Firekast Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.firekast.Firekast-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		F56F406A212D90A800627BD0 /* Debug */ = {
+		F5880BF2216E5943005A4CAB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 185D9E00499151ABFBDD61EA /* Pods-Firekast Demo Objective-C.debug.xcconfig */;
+			baseConfigurationReference = 684BC1E008D485C70D9FD620 /* Pods-Firekast Demo Objective-C.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3V625GQ5E9;
 				INFOPLIST_FILE = "Firekast Demo Objective-C/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -615,16 +636,15 @@
 			};
 			name = Debug;
 		};
-		F56F406B212D90A800627BD0 /* Release */ = {
+		F5880BF3216E5943005A4CAB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A48AC26BD2B7430C3011EF2D /* Pods-Firekast Demo Objective-C.release.xcconfig */;
+			baseConfigurationReference = 4096577500B2FE21D82AC8CD /* Pods-Firekast Demo Objective-C.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3V625GQ5E9;
 				INFOPLIST_FILE = "Firekast Demo Objective-C/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -638,34 +658,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F56122E7208A0DCC001BF7A7 /* Build configuration list for PBXProject "Firekast Demo" */ = {
+		F5880BBD216E4EA3005A4CAB /* Build configuration list for PBXProject "Firekast Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F56122FE208A0DCD001BF7A7 /* Debug */,
-				F56122FF208A0DCD001BF7A7 /* Release */,
+				F5880BD2216E4EA4005A4CAB /* Debug */,
+				F5880BD3216E4EA4005A4CAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F5612300208A0DCD001BF7A7 /* Build configuration list for PBXNativeTarget "Firekast Demo" */ = {
+		F5880BD4216E4EA4005A4CAB /* Build configuration list for PBXNativeTarget "Firekast Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F5612301208A0DCD001BF7A7 /* Debug */,
-				F5612302208A0DCD001BF7A7 /* Release */,
+				F5880BD5216E4EA4005A4CAB /* Debug */,
+				F5880BD6216E4EA4005A4CAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F56F406C212D90A800627BD0 /* Build configuration list for PBXNativeTarget "Firekast Demo Objective-C" */ = {
+		F5880BF1216E5943005A4CAB /* Build configuration list for PBXNativeTarget "Firekast Demo Objective-C" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F56F406A212D90A800627BD0 /* Debug */,
-				F56F406B212D90A800627BD0 /* Release */,
+				F5880BF2216E5943005A4CAB /* Debug */,
+				F5880BF3216E5943005A4CAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F56122E4208A0DCC001BF7A7 /* Project object */;
+	rootObject = F5880BBA216E4EA3005A4CAB /* Project object */;
 }
