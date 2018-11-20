@@ -22,6 +22,9 @@ class FirstViewController: UIViewController, FKStreamerDelegate, GIDSignInUIDele
     @IBOutlet weak var ibYoutubeSwitch: UISwitch!
     @IBOutlet weak var ibCameraCapture: UIImageView!
     
+    @IBOutlet weak var ibViewState: UIView!
+    @IBOutlet weak var ibViewStateProgress: UIActivityIndicatorView!
+    
     var streamer = FKStreamer() // 1. initializes streamer
     var camera: FKCamera!
     var stream: FKStream?
@@ -30,7 +33,7 @@ class FirstViewController: UIViewController, FKStreamerDelegate, GIDSignInUIDele
         didSet {
             ibLoading.isHidden = !isLoading
             ibButton.isEnabled = !isLoading
-            ibButton.setTitle("", for: .normal)
+            ibButton.setTitle(isLoading ? "" : (isStreaming ? "Stop streaming" : "Start streaming"), for: .normal)
         }
     }
     
@@ -60,6 +63,8 @@ class FirstViewController: UIViewController, FKStreamerDelegate, GIDSignInUIDele
         
         ibButton.setTitle("Start streaming", for: .normal)
         ibLoading.isHidden = true
+        
+        ibViewState.isHidden = true
         
         refreshGoogleInterface()
     }
@@ -111,7 +116,7 @@ class FirstViewController: UIViewController, FKStreamerDelegate, GIDSignInUIDele
 
 // MARK: - Firekast Delegate
 extension FirstViewController {
-    func streamer(_ streamer: FKStreamer, willStartOn stream: FKStream?, unless error: NSError?) {
+    func streamer(_ streamer: FKStreamer, willStart stream: FKStream?, unless error: NSError?) {
         self.isLoading = false
         if let error = error {
             print("Firekast start stream error: \(error)")
@@ -121,11 +126,20 @@ extension FirstViewController {
         self.isStreaming = true
         internal_latest_stream = stream
         self.stream = stream
+        self.ibViewStateProgress.isHidden = false
+        self.ibViewState.isHidden = false
+        self.ibViewState.backgroundColor = UIColor.gray
     }
     
-    func streamer(_ streamer: FKStreamer, didStopOn stream: FKStream?, error: NSError?) {
+    func streamer(_ streamer: FKStreamer, didStop stream: FKStream?, error: NSError?) {
         self.isStreaming = false
         self.stream = nil
+        self.ibViewState.isHidden = true
+    }
+  
+    func streamer(_ streamer: FKStreamer, didBecomeLive stream: FKStream) {
+        self.ibViewState.backgroundColor = UIColor.red
+        self.ibViewStateProgress.isHidden = true
     }
     
     func streamer(_ streamer: FKStreamer, networkQualityDidUpdate rating: Float) {

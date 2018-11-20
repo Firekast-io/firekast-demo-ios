@@ -14,7 +14,7 @@ PODS:
   - boost/preprocessor-includes (1.51.0)
   - boost/shared_ptr-includes (1.51.0)
   - boost/string_algorithms-includes (1.51.0)
-  - Firekast (1.3.0)
+  - Firekast (1.3.1)
   - glm (0.9.4.6)
   - GoogleSignIn (4.3.0):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
@@ -31,11 +31,11 @@ PODS:
   - "GoogleToolboxForMac/NSString+URLArguments (2.1.4)"
   - GTMOAuth2 (1.1.6):
     - GTMSessionFetcher (~> 1.1)
-  - GTMSessionFetcher (1.2.0):
-    - GTMSessionFetcher/Full (= 1.2.0)
-  - GTMSessionFetcher/Core (1.2.0)
-  - GTMSessionFetcher/Full (1.2.0):
-    - GTMSessionFetcher/Core (= 1.2.0)
+  - GTMSessionFetcher (1.2.1):
+    - GTMSessionFetcher/Full (= 1.2.1)
+  - GTMSessionFetcher/Core (1.2.1)
+  - GTMSessionFetcher/Full (1.2.1):
+    - GTMSessionFetcher/Core (= 1.2.1)
   - UriParser-cpp (0.1.3)
   - VideoCore (0.3.2):
     - boost (~> 1.51.0)
@@ -43,12 +43,12 @@ PODS:
     - UriParser-cpp (~> 0.1.3)
 
 DEPENDENCIES:
-  - Firekast (from `http://firekast.io/sdk/ios/v1.3.0/Firekast.podspec`)
+  - Firekast (from `http://firekast.io/sdk/ios/v1.3.1/Firekast.podspec`)
   - GoogleSignIn (= 4.3.0)
-  - VideoCore (from `https://github.com/Firekast-io/VideoCore.git`, tag `fk-1.3.0`)
+  - VideoCore (from `https://github.com/Firekast-io/VideoCore.git`, tag `fk-1.3.1`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - boost
     - glm
     - GoogleSignIn
@@ -59,27 +59,27 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   Firekast:
-    :podspec: http://firekast.io/sdk/ios/v1.3.0/Firekast.podspec
+    :podspec: http://firekast.io/sdk/ios/v1.3.1/Firekast.podspec
   VideoCore:
     :git: https://github.com/Firekast-io/VideoCore.git
-    :tag: fk-1.3.0
+    :tag: fk-1.3.1
 
 CHECKOUT OPTIONS:
   VideoCore:
     :git: https://github.com/Firekast-io/VideoCore.git
-    :tag: fk-1.3.0
+    :tag: fk-1.3.1
 
 SPEC CHECKSUMS:
   boost: 6c5c8d8daef26ac83c1e1c00ad14de62b80161d7
-  Firekast: c722465492a59e1b91c8b6472a24853f0fc7fd50
+  Firekast: bb4b2f387eb2dffb815c1f80053b9c7adb8bae25
   glm: e22c8d9df10404059b19c2952f9fa44d9a9f3056
   GoogleSignIn: 11183592dc63e105475c7305a325045ff95e02b7
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
-  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   UriParser-cpp: cbbe00080ee432ec4833dca863a7fc83adc9b01a
   VideoCore: 9f9a95324d76cc123c19ec25c71fe06001d9c1d8
 
-PODFILE CHECKSUM: 324d04316d85be236919ac34331e6efc0c6565ec
+PODFILE CHECKSUM: 0f7a9d9cd0467c7ad50c3b52768d4431bf9a0d47
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

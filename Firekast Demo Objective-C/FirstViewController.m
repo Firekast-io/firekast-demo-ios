@@ -88,7 +88,7 @@
     
     // MARK: Firekast Delegate
 
-- (void)streamer:(FKStreamer * _Nonnull)streamer willStartOn:(FKStream * _Nullable)stream unless:(NSError * _Nullable)error {
+- (void)streamer:(FKStreamer * _Nonnull)streamer willStart:(FKStream * _Nullable)stream unless:(NSError * _Nullable)error {
     [self showLoading:FALSE];
     if (error != nil) {
         NSLog(@"Firekast start stream error: %@", error);
@@ -99,13 +99,17 @@
     self.stream = stream;
 }
     
-- (void)streamer:(FKStreamer * _Nonnull)streamer didStopOn:(FKStream * _Nullable)stream error:(NSError * _Nullable)error {
+- (void)streamer:(FKStreamer * _Nonnull)streamer didStop:(FKStream * _Nullable)stream error:(NSError * _Nullable)error {
     [_ibStartStopButton setTitle:@"Start streaming" forState:UIControlStateNormal];
     self.stream = nil;
 }
     
 - (void)streamer:(FKStreamer * _Nonnull)streamer networkQualityDidUpdate:(float)rating {
     
+}
+
+- (void)streamer:(FKStreamer *)streamer didBecomeLive:(FKStream *)stream {
+    NSLog(@"Stream state is now LIVE.");
 }
     
     // MARK: Google Sign In Delegate
