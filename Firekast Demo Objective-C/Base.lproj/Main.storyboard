@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -144,13 +142,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUj-Kh-sFz" userLabel="Player">
-                                <rect key="frame" x="0.0" y="228" width="375" height="211"/>
+                                <rect key="frame" x="8" y="28" width="359" height="411"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="qUj-Kh-sFz" secondAttribute="height" multiplier="16:9" id="qA5-Xk-QtT"/>
-                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSL-om-akK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DSL-om-akK">
                                 <rect key="frame" x="140" y="546" width="95" height="54"/>
                                 <color key="backgroundColor" red="1" green="0.72156862749999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -166,14 +161,15 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="qUj-Kh-sFz" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="8" id="9Cx-pQ-VcD"/>
                             <constraint firstItem="x13-2A-y9D" firstAttribute="centerX" secondItem="DSL-om-akK" secondAttribute="centerX" id="Dp3-IJ-xim"/>
-                            <constraint firstItem="qUj-Kh-sFz" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="Fma-Ob-UJh"/>
                             <constraint firstItem="x13-2A-y9D" firstAttribute="centerY" secondItem="DSL-om-akK" secondAttribute="centerY" id="MFg-il-YHo"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DSL-om-akK" secondAttribute="trailing" constant="16" id="N1p-65-9Ro"/>
-                            <constraint firstItem="qUj-Kh-sFz" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="PmC-4h-puV"/>
+                            <constraint firstItem="qUj-Kh-sFz" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="8" id="OwU-tz-mFU"/>
+                            <constraint firstItem="qUj-Kh-sFz" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" constant="-8" id="nSP-TC-ixf"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="DSL-om-akK" secondAttribute="bottom" constant="18" id="pg9-VW-crh"/>
                             <constraint firstItem="DSL-om-akK" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="qdF-ss-yp8"/>
-                            <constraint firstItem="qUj-Kh-sFz" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="rBf-OD-wTB"/>
+                            <constraint firstItem="DSL-om-akK" firstAttribute="top" secondItem="qUj-Kh-sFz" secondAttribute="bottom" constant="107" id="wMY-YI-pDr"/>
                             <constraint firstItem="DSL-om-akK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="16" id="y4B-P3-V36"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>

@@ -95,7 +95,8 @@
         return;
     }
     [_ibStartStopButton setTitle:@"Stop streaming" forState:UIControlStateNormal];
-    IDStreamToPlay = self.stream.streamId;
+    self.stream = stream;
+    IDStreamToPlay = stream.streamId;
     self.stream = stream;
 }
     

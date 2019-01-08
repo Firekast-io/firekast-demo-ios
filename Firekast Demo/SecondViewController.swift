@@ -8,77 +8,69 @@
 
 import UIKit
 import Firekast
+//import CoreMedia
 
 class SecondViewController: UIViewController, FKPlayerDelegate {
     
     @IBOutlet weak var ibPlayer: UIView!
     @IBOutlet weak var ibButton: UIButton!
     @IBOutlet weak var ibLoading: UIActivityIndicatorView!
+    @IBOutlet weak var ibPlayerState: UILabel!
     
     let player = FKPlayer() // 1. initializes player
     
     var isLoading: Bool = false {
         didSet {
             ibLoading.isHidden = !isLoading
-            ibButton.isEnabled = !isLoading
-            ibButton.setTitle("", for: .normal)
-        }
-    }
-    
-    var isPlaying: Bool = false {
-        didSet {
-            ibButton.setTitle(isPlaying ? "Stop" : "Play latest stream", for: .normal)
+            ibButton.isHidden = isLoading
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         template()
-        player.show(in: ibPlayer) // 2. displays player
-        player.scalingMode = .aspectFit
-        player.controlStyle = .fullscreen
+        player.delegate = self // 2. set delegate
+        player.show(in: ibPlayer) // 3. displays player
+        //        player.videoGravity = .resizeAspectFill
+        //        player.showPlaybackControls = false
     }
     
     private func template() {
+        ibPlayerState.text = ""
+        
         ibButton.backgroundColor = UIColor.white.withAlphaComponent(0.4)
         ibButton.layer.cornerRadius = 8
         ibButton.layer.borderWidth = 1
         ibButton.layer.borderColor = UIColor.black.cgColor
         
-        ibButton.setTitle("Play latest stream", for: .normal)
+        ibButton.setTitle("Play stream", for: .normal)
         ibLoading.isHidden = true
     }
     
     @IBAction func clickButton(_ sender: Any) {
-        if player.state == .playing {
-            isPlaying = false
-            player.stop()
-        } else if let stream = internal_latest_stream {
+        if let stream = internal_latest_stream {
             isLoading = true
-            player.play(stream: stream.id, delegate: self)
+            player.play(stream)
         } else {
-            print("First make a stream and then watch it :)")
-            //            player.play(stream: "another_stream_id", delegate: self)
+            ibPlayerState.text = "First make a stream and come back here to watch it. Or edit source code."
+//            isLoading = true
+//            let stream = FKStream(withoutDataExceptStreamId: "bm60nwimigt0an081")
+//            player.play(stream)
+////            player.play(stream, at: CMTime(seconds: 3.5, preferredTimescale: 1)) // will start the video at t=3.5 seconds
         }
     }
     
 }
 
 extension SecondViewController {
-    func player(_ player: FKPlayer, willPlay stream: FKStream?, unless error: NSError?) {
+    func player(_ player: FKPlayer, willPlay stream: FKStream, unless error: NSError?) {
         isLoading = false
         if let error = error {
-            print("Player error: \(error)")
+            ibPlayerState.text = "☠️ \(error) ☠️"
         }
     }
     
-    func player(_ player: FKPlayer, videoDurationIsAvailable duration: TimeInterval) {
-    
-    }
-    
     func player(_ player: FKPlayer, stateDidChanged state: FKPlayer.State) {
-        print("Player state changed to \(state)")
-        isLoading = state != .stopped && state != .playing
-        isPlaying = state != .stopped
+        ibPlayerState.text = "Player state: \(state)"
     }
 }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -170,11 +170,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUj-Kh-sFz" userLabel="Player">
-                                <rect key="frame" x="0.0" y="228" width="375" height="211"/>
+                                <rect key="frame" x="8" y="28" width="359" height="419"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="qUj-Kh-sFz" secondAttribute="height" multiplier="16:9" id="qA5-Xk-QtT"/>
-                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSL-om-akK">
                                 <rect key="frame" x="117.5" y="546" width="140" height="54"/>
@@ -193,16 +190,26 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="x13-2A-y9D">
                                 <rect key="frame" x="177.5" y="563" width="20" height="20"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="print" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdR-hR-Br0">
+                                <rect key="frame" x="8" y="455" width="359" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="MdR-hR-Br0" firstAttribute="top" secondItem="qUj-Kh-sFz" secondAttribute="bottom" constant="8" id="4xx-mu-EpY"/>
+                            <constraint firstItem="MdR-hR-Br0" firstAttribute="leading" secondItem="qUj-Kh-sFz" secondAttribute="leading" id="9lV-S0-tRc"/>
                             <constraint firstItem="x13-2A-y9D" firstAttribute="centerX" secondItem="DSL-om-akK" secondAttribute="centerX" id="Dp3-IJ-xim"/>
-                            <constraint firstItem="qUj-Kh-sFz" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="Fma-Ob-UJh"/>
+                            <constraint firstItem="qUj-Kh-sFz" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" constant="-8" id="Fma-Ob-UJh"/>
                             <constraint firstItem="x13-2A-y9D" firstAttribute="centerY" secondItem="DSL-om-akK" secondAttribute="centerY" id="MFg-il-YHo"/>
-                            <constraint firstItem="qUj-Kh-sFz" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="PmC-4h-puV"/>
+                            <constraint firstItem="MdR-hR-Br0" firstAttribute="trailing" secondItem="qUj-Kh-sFz" secondAttribute="trailing" id="Nj1-IQ-W3B"/>
+                            <constraint firstItem="qUj-Kh-sFz" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="8" id="PmC-4h-puV"/>
+                            <constraint firstItem="DSL-om-akK" firstAttribute="top" secondItem="qUj-Kh-sFz" secondAttribute="bottom" constant="99" id="bcT-Af-KQL"/>
+                            <constraint firstItem="qUj-Kh-sFz" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="8" id="k4h-59-rUB"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="DSL-om-akK" secondAttribute="bottom" constant="18" id="pg9-VW-crh"/>
                             <constraint firstItem="DSL-om-akK" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="qdF-ss-yp8"/>
-                            <constraint firstItem="qUj-Kh-sFz" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="rBf-OD-wTB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
@@ -211,6 +218,7 @@
                         <outlet property="ibButton" destination="DSL-om-akK" id="LvF-Lm-4CS"/>
                         <outlet property="ibLoading" destination="x13-2A-y9D" id="c7Q-JA-oMO"/>
                         <outlet property="ibPlayer" destination="qUj-Kh-sFz" id="KKY-4g-Vcm"/>
+                        <outlet property="ibPlayerState" destination="MdR-hR-Br0" id="6lD-wW-yUr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>

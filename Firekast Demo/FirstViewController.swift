@@ -25,7 +25,7 @@ class FirstViewController: UIViewController, FKStreamerDelegate, GIDSignInUIDele
     @IBOutlet weak var ibViewState: UIView!
     @IBOutlet weak var ibViewStateProgress: UIActivityIndicatorView!
     
-    var streamer = FKStreamer() // 1. initializes streamer
+    var streamer = FKStreamer(usecase: .portrait) // 1. initializes streamer
     var camera: FKCamera!
     var stream: FKStream?
     
