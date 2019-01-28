@@ -51,6 +51,7 @@
 		F5880BEC216E5943005A4CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5880BEE216E5943005A4CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5880BEF216E5943005A4CAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F595231721FF5BF400896065 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +97,7 @@
 		F5880BB9216E4EA3005A4CAB = {
 			isa = PBXGroup;
 			children = (
+				F595231721FF5BF400896065 /* README.md */,
 				F5880BC4216E4EA3005A4CAB /* Firekast Demo */,
 				F5880BDC216E5942005A4CAB /* Firekast Demo Objective-C */,
 				F5880BC3216E4EA3005A4CAB /* Products */,
