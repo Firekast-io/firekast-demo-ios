@@ -261,7 +261,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C-resources.sh",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -272,7 +272,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3C50C7F6AEFBC2131D30362C /* [CP] Embed Pods Frameworks */ = {
@@ -283,7 +283,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-frameworks.sh",
 				"${PODS_ROOT}/Firekast/Firekast.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
@@ -304,7 +304,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3E7BF9A5D37ACE6BD0C817BD /* [CP] Check Pods Manifest.lock */ = {
@@ -337,7 +337,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-resources.sh",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -348,7 +348,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Firekast Demo/Pods-Firekast Demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CF891E9D1943CBC0CF4658C5 /* [CP] Embed Pods Frameworks */ = {
@@ -359,7 +359,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C-frameworks.sh",
 				"${PODS_ROOT}/Firekast/Firekast.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
@@ -380,7 +380,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Firekast Demo Objective-C/Pods-Firekast Demo Objective-C-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D0A702B223D929AFE2F3E253 /* [CP] Check Pods Manifest.lock */ = {

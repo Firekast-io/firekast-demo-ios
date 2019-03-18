@@ -20,7 +20,7 @@ NSString *IDStreamToPlay = nil;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Firekast initializeWithClientKey:@"FIREKAST_CLIENT_KEY" applicationId:@"FIREKAST_APPLICATION_ID"];
+    [Firekast initializeWithPrivateKey:@"FIREKAST_APP_PRIVATE_KEY"];
     // Init Google SignIn
     [GIDSignIn sharedInstance].clientID = @"YOUR_GOOGLE_CLIENT_ID";
     NSMutableArray *currentScopes = [[[GIDSignIn sharedInstance] scopes] mutableCopy];

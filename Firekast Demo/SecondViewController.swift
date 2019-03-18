@@ -63,7 +63,7 @@ class SecondViewController: UIViewController, FKPlayerDelegate {
 }
 
 extension SecondViewController {
-    func player(_ player: FKPlayer, willPlay stream: FKStream, unless error: NSError?) {
+    func player(_ player: FKPlayer, willPlay stream: FKStream, unless error: Error?) {
         isLoading = false
         if let error = error {
             ibPlayerState.text = "☠️ \(error) ☠️"

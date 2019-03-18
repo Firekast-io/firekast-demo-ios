@@ -152,6 +152,7 @@
                         <outlet property="ibGoogleSignInButton" destination="pRC-jq-aAh" id="umn-qE-TMN"/>
                         <outlet property="ibGoogleSignOutButton" destination="pDp-ZS-qjF" id="dIM-X3-BlN"/>
                         <outlet property="ibLoading" destination="QvP-c3-yLY" id="H7Q-fU-vyC"/>
+                        <outlet property="ibViewSocial" destination="LEY-yq-gyG" id="Qdr-7d-fPC"/>
                         <outlet property="ibViewState" destination="UNP-D7-y3D" id="D1t-3m-UQL"/>
                         <outlet property="ibViewStateProgress" destination="JtJ-kg-Ev6" id="mA6-DU-7Iy"/>
                         <outlet property="ibYoutubeSwitch" destination="qrc-5r-862" id="Txr-sg-Nbi"/>

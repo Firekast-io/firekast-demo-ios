@@ -33,13 +33,19 @@ Firekast SDK release notes can be found [here](https://docs.firekast.io/?swift#r
 
 ## Youtube Live Stream
 
-### Setup
+### SDK 1.6.0 and above
+
+We decided to let you choose the platform to which you want to live stream. You no longer rely on our implementation, provide us with the RTMP link and that's it.
+
+### SDK 1.5.0 and below
+
+#### Setup
 
 1. In the app, set your Google Sign In credentials in `AppDelegate.swift` and `Info.plist`. Follow steps https://developers.google.com/identity/sign-in/ios/start-integrating to get your Google OAuth client ID.
 2. In your project Google API Console, enable Youtube Data API v3.
 3. In Youtube website, access Studio Creator and enable Live Streaming. ![alt text](assets/YT_enable_livestreaming.png "Enable Live Streaming")
 
-### Youtube live streaming in action
+#### Youtube live streaming in action
 
 1. In the app, click "Google Sign In" button. Once signed-in to Google, switch on the top right button to enable Youtube Live.
 
@@ -59,8 +65,7 @@ Firekast SDK release notes can be found [here](https://docs.firekast.io/?swift#r
 
 ![alt text](assets/YT_step4.png "Watch your live on Youtube Creator Studio")
 
-
-### Troubleshootings
+#### Troubleshootings
 
 - The following error is because you did not activate Youtube Data API v3 in the Google API Console. You will need to logout and sign-in again to re-new your token.
 

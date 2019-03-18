@@ -24,7 +24,8 @@ class FirstViewController: UIViewController, FKStreamerDelegate, GIDSignInUIDele
     
     @IBOutlet weak var ibViewState: UIView!
     @IBOutlet weak var ibViewStateProgress: UIActivityIndicatorView!
-    
+    @IBOutlet weak var ibViewSocial: UIView!
+  
     var streamer = FKStreamer(usecase: .portrait) // 1. initializes streamer
     var camera: FKCamera!
     var stream: FKStream?
@@ -66,6 +67,7 @@ class FirstViewController: UIViewController, FKStreamerDelegate, GIDSignInUIDele
         
         ibViewState.isHidden = true
         
+        ibViewSocial.isHidden = true // See TODO below
         refreshGoogleInterface()
     }
     
@@ -90,12 +92,12 @@ class FirstViewController: UIViewController, FKStreamerDelegate, GIDSignInUIDele
             streamer.stopStreaming()
         } else {
             isLoading = true
-            var outputs = [FKOutput]()
+            var outputs = [RtmpUrl]()
             if ibYoutubeSwitch.isOn, let token = GIDSignIn.sharedInstance().currentUser?.authentication?.accessToken {
-                let youtubeLive = FKOutput.youtube(accessToken: token, title: "Hello world :)")
-                outputs.append(youtubeLive)
+                //TODO: Visit Youtube API, create a live stream and provide us with the RTMP link.
+                assert(false, "⚠️⚠️⚠️ TODO: visit Youtube API, create a live stream and provide us with the RTMP link. ⚠️⚠️⚠️") // TODO: implement
             }
-            streamer.requestStream(outputs: outputs) { [weak self] (stream, error) in // 3. creates a stream
+            streamer.createStream(outputs: outputs) { [weak self] (stream, error) in // 3. creates a stream
                 guard let this = self else { return }
                 guard let stream = stream else {
                     print("Error: \(String(describing: error))")
@@ -116,7 +118,7 @@ class FirstViewController: UIViewController, FKStreamerDelegate, GIDSignInUIDele
 
 // MARK: - Firekast Delegate
 extension FirstViewController {
-    func streamer(_ streamer: FKStreamer, willStart stream: FKStream?, unless error: NSError?) {
+    func streamer(_ streamer: FKStreamer, willStart stream: FKStream, unless error: Error?) {
         self.isLoading = false
         if let error = error {
             print("Firekast start stream error: \(error)")
@@ -131,7 +133,7 @@ extension FirstViewController {
         self.ibViewState.backgroundColor = UIColor.gray
     }
     
-    func streamer(_ streamer: FKStreamer, didStop stream: FKStream?, error: NSError?) {
+    func streamer(_ streamer: FKStreamer, didStop stream: FKStream, error: Error?) {
         self.isStreaming = false
         self.stream = nil
         self.ibViewState.isHidden = true
@@ -142,8 +144,8 @@ extension FirstViewController {
         self.ibViewStateProgress.isHidden = true
     }
     
-    func streamer(_ streamer: FKStreamer, networkQualityDidUpdate rating: Float) {
-        
+    func streamer(_ streamer: FKStreamer, didUpdateStreamHealth health: Float) {
+        // TODO.
     }
 }
 

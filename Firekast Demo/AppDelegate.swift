@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Firekast.initialize(clientKey: "YOUR_CLIENT_KEY_HERE", applicationId: "YOUR_APPLICATION_ID_HERE")
+        Firekast.initialize(privateKey: "YOUR_PRIVATE_API_KEY_HERE")
         initGoogleSignIn()
         return true
     }

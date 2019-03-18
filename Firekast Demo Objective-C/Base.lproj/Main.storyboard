@@ -126,6 +126,7 @@
                         <outlet property="ibLoading" destination="QvP-c3-yLY" id="fTZ-PK-L8Q"/>
                         <outlet property="ibSocialViews" destination="LEY-yq-gyG" id="A1N-M1-SQa"/>
                         <outlet property="ibStartStopButton" destination="rXx-rZ-sAi" id="zpF-cM-ecE"/>
+                        <outlet property="ibViewSocial" destination="LEY-yq-gyG" id="sat-WZ-tfd"/>
                         <outlet property="ibYoutubeSwitch" destination="qrc-5r-862" id="sOz-TY-Uh9"/>
                     </connections>
                 </viewController>

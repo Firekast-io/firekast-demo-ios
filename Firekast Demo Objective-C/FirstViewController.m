@@ -17,11 +17,12 @@
     
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _streamer = [[FKStreamer alloc] initWithUsecase:Portrait];
+    _streamer = [[FKStreamer alloc] initWithUsecase:FKStreamerOrientationPortrait];
     _camera = [_streamer showCamera:Front in:_ibCameraPreview];
     // init UI
     [self showLoading:FALSE];
     [_ibStartStopButton setTitle:@"Start streaming" forState:UIControlStateNormal];
+    [_ibViewSocial setHidden:TRUE]; // See TODO below
     [self refreshGoogleInterface];
     // init Google Sign In
     [[GIDSignIn sharedInstance] setDelegate:self];
@@ -46,13 +47,14 @@
         [_streamer stopStreaming];
     } else {
         [self showLoading:TRUE];
-        NSMutableArray *outputs = [NSMutableArray new];
+        NSMutableArray *restream = [NSMutableArray new];
         NSString *youtubeAccessToken = [[[[GIDSignIn sharedInstance] currentUser] authentication] accessToken];
         if ([[self ibYoutubeSwitch] isOn] && youtubeAccessToken != nil) {
-            FKOutput *youtube = [FKOutput youtubeWithAccessToken:youtubeAccessToken title:@"Hello world :Objc" extras:nil];
-            [outputs addObject:youtube];
+            //TODO: Visit Youtube API, create a live stream and provide us with the RTMP link.
+            NSAssert(false, @"TODO: visit Youtube API, create a live stream and provide us with the RTMP link.");
         }
-        [_streamer requestStream_objc:outputs completion:^(FKStream * stream, NSError *error) {
+        [_streamer createStreamWithOutputs:restream completion:^(FKStream * stream, NSError *error) {
+            [self showLoading:FALSE];
             if (error != nil) {
                 NSLog(@"Error: %@", error);
                 return;
@@ -88,24 +90,23 @@
     
     // MARK: Firekast Delegate
 
-- (void)streamer:(FKStreamer * _Nonnull)streamer willStart:(FKStream * _Nullable)stream unless:(NSError * _Nullable)error {
-    [self showLoading:FALSE];
+- (void)streamer:(FKStreamer * _Nonnull)streamer willStart:(FKStream * _Nonnull)stream unless:(NSError * _Nullable)error {
     if (error != nil) {
         NSLog(@"Firekast start stream error: %@", error);
         return;
     }
     [_ibStartStopButton setTitle:@"Stop streaming" forState:UIControlStateNormal];
     self.stream = stream;
-    IDStreamToPlay = stream.streamId;
+    IDStreamToPlay = stream.id;
     self.stream = stream;
 }
     
-- (void)streamer:(FKStreamer * _Nonnull)streamer didStop:(FKStream * _Nullable)stream error:(NSError * _Nullable)error {
+- (void)streamer:(FKStreamer * _Nonnull)streamer didStop:(FKStream * _Nonnull)stream error:(NSError * _Nullable)error {
     [_ibStartStopButton setTitle:@"Start streaming" forState:UIControlStateNormal];
     self.stream = nil;
 }
-    
-- (void)streamer:(FKStreamer * _Nonnull)streamer networkQualityDidUpdate:(float)rating {
+
+- (void)streamer:(FKStreamer * _Nonnull)streamer didUpdateStreamHealth:(float)rating {
     
 }
 
