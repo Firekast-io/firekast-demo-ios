@@ -50,7 +50,7 @@
     if (IDStreamToPlay != nil) {
         [self showLoading:TRUE];
         FKStream* stream = [[FKStream alloc] initWithWithoutDataExceptStreamId:IDStreamToPlay];
-        [self.player play:stream at:kCMTimeZero];
+        [self.player play:stream at:kCMTimeZero playImmediately:YES];
     } else {
         NSLog(@"Make a live stream with the app and click button to watch it. Or edit IDStreamToPlay in AppDelegate.m");
     }
