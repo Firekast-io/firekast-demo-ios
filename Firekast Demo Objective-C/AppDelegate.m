@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Firekast/Firekast-Swift.h"
+@import Firekast;
 @import GoogleSignIn;
 
 NSString *IDStreamToPlay = nil;
