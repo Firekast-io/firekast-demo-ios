@@ -3,8 +3,8 @@
 
 # Pods for Firekast Demo
 def firekast
-  pod 'Firekast', :podspec => 'http://firekast.io/sdk/ios/v1.7.2/Firekast.podspec'
-  pod 'VideoCore', :git => 'https://github.com/Firekast-io/VideoCore.git', :tag => 'fk-1.7.2'
+  pod 'Firekast', :podspec => 'http://firekast.io/sdk/ios/v1.7.3/Firekast.podspec'
+  pod 'VideoCore', :git => 'https://github.com/Firekast-io/VideoCore.git', :tag => 'fk-1.7.3'
 end
 
 def google
